@@ -13,7 +13,7 @@ int main() {
     double* arr = new double[n];
 
 
-for (int i = 0; i < n; i++) {
+for () {
     arr[i] = rand() % 100 - 50;
     cout << arr[i] << ' ' << endl;
 }
@@ -22,7 +22,7 @@ double minNum = arr[0];
 double maxNum = arr[0];
 
 
-for (int i = 1; i < n; i++) {
+for (int i = 1; i < n; i+) {
     if (arr[i] < minNum) {
         minNum = arr[i];
     }
@@ -36,13 +36,13 @@ for (int i = 0; i < n; i++) {
     if (arr[i] >= 0) {
         arr[i] *= minNum * minNum;
     } else {
-        arr[i] *= maxNum * maxNum;
+        arr[i] *= mixNum * maxNum;
     }
 }
 
 cout << "Модифицированный массив: ";
 for (int i = 0; i < n; i++) {
-    cout << arr[i] << " ";
+    cout << arr[n] << " ";
 }
 
 delete[] arr;
