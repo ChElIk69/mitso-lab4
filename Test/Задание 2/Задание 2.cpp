@@ -22,7 +22,7 @@ double minNum = arr[0];
 double maxNum = arr[0];
 
 
-for () {
+for (int i = 1; i < n; i++) {
     if (arr[i] < minNum) {
         minNum = arr[i];
     }
@@ -36,13 +36,13 @@ for (int i = 0; i < n; i++) {
     if (arr[i] >= 0) {
         arr[i] *= minNum * minNum;
     } else {
-        arr[i] *= minNum * maxNum;
+        arr[i] *= maxNum * maxNum;
     }
 }
 
 cout << "Модифицированный массив: ";
 for (int i = 0; i < n; i++) {
-    cout << arr[n] << " ";
+    cout << arr[i] << " ";
 }
 
 delete[] arr;
